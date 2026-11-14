@@ -1,0 +1,20 @@
+# Evidencia: análisis estático INICIAL (código base sin modificar)
+# Fecha: 2026-11-13 21:16  |  Node v22.23.3  |  ESLint v10.15.0
+# Comando: npm run lint
+
+> vvs-u1-evaluacion-estatica@1.0.0 lint
+> eslint src/
+
+
+.\src\descuentos.js
+  2:3   error    Unexpected var, use let or const instead  no-var
+  3:13  error    Expected '===' and instead saw '=='       eqeqeq
+  3:22  error    Expected { after 'if' condition           curly
+  3:46  warning  No magic number: 10                       no-magic-numbers
+  4:25  error    Expected { after 'if' condition           curly
+  4:25  warning  Unexpected console statement              no-console
+  5:3   error    Unexpected var, use let or const instead  no-var
+
+✖ 7 problems (5 errors, 2 warnings)
+  4 errors and 0 warnings potentially fixable with the `--fix` option.
+# Código de salida: 1
